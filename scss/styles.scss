@@ -97,7 +97,7 @@ body {
 // No JS styles
 .no-js {
     #experience-timeline {
-        > div {
+        > div { 
             background: $background;
             padding: 10px;
             margin-bottom: 10px;
@@ -154,7 +154,7 @@ header {
 
     ul {
         display: inline-block;
-        background: $background;
+        background: currentColor;
         text-align: center;
         padding: 10px;
         margin: 0;
@@ -170,16 +170,17 @@ header {
         display: block;
         color: $base-color;
         padding: 10px;
+        color:limegreen;
 
         &:hover {
-            color: $base-color-hover;
+            color: black;
             text-decoration: none;
-            background: #eee;
+            background:lime;
             border-radius: 4px;
         }
 
         &:focus {
-            color: $base-color;
+            color: black;
             text-decoration: none;
         }
     }
@@ -206,7 +207,7 @@ header {
     position: fixed;
     right: 15px;
     top: 10px;
-    color: $base-color;
+    color: lime;
     font-size: 1.5em;
     z-index: 20;
     padding: 0 7px;
@@ -223,7 +224,7 @@ header {
     padding-right: 15px;
     padding-top: 10px;
     cursor: pointer;
-    color: $base-color;
+    color: lime;
 
     span {
         font-size: 0.5em;
@@ -244,7 +245,7 @@ footer {
 
     p {
         margin: 0;
-        color: $text;
+        color: lime;
     }
 }
 
@@ -260,10 +261,14 @@ footer {
         border-radius: 50%;
         border: 3px solid lighten($text, 25%);
         text-align:center;
+       
     }
 
     i {
-        color: $text;
+        color: lime;
+        &:hover {
+            color: black;
+        }
     }
 }
 
@@ -283,11 +288,11 @@ footer {
 
     a {
         display: block;
-        color: $text;
+        color: lime;
         padding: 10px;
 
         &:hover {
-            color: $base-color;
+            color: black;
         }
     }
 }
@@ -301,7 +306,8 @@ footer {
     @include transition();
 
     &:hover {
-        color: $base-color;
+        color: lime;
+        font-size: 20px;
         background: #fff;
         text-decoration: none;
     }
@@ -318,8 +324,8 @@ footer {
 .heading {
     position: relative;
     display: inline-block;
-    font-size: 2em;
-    font-weight: 300;
+    font-size:50px;
+    font-weight: 500;
     margin: 0 0 30px 0;
 
     &:after {
@@ -331,12 +337,12 @@ footer {
         left: 0;
         right: 0;
         margin: 0 auto;
-        background: $base-color;
+        background: white;
     }
 }
 
 .background-alt {
-    background: $background-alt;
+    background: black;
 }
 
 /*
@@ -350,7 +356,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(https://i.pinimg.com/originals/c5/9a/d2/c59ad2bd4ad2fbacd04017debc679ddb.gif);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -378,7 +384,7 @@ footer {
     }
 
     h2 {
-        color: lighten($base-color, 25%);
+        color: lime;
         font-weight: 500;
         font-size: 2.25em;
         margin-bottom: 15px;
@@ -393,7 +399,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba($base-color-hover, 0.8);
+    background: rgba(33,125,187,0);
     z-index: 1;
 }
 
@@ -414,7 +420,8 @@ footer {
         width: 35px;
         height: 35px;
         border-radius: 50%;
-        border: 3px solid lighten($base-color, 25%);
+        border: 3px solid lime;
+        color: white;
         text-align:center;
     }
 
@@ -447,10 +454,12 @@ footer {
 
 #about {
     padding: 75px 15px;
-    border-bottom: 1px solid $border;
+    border-bottom: 4px solid lime;
 
     h2 {
-        color: $heading;
+        font-size:50px;
+        font-weight: 500;
+        color:lime;
     }
 
     p {
@@ -468,10 +477,11 @@ footer {
 #experience {
     padding: 50px 15px;
     text-align: center;
-    border-bottom: 1px solid $border;
 
     h2 {
-        color: $heading;
+        font-size:50px;
+        font-weight: 500;
+        color:lime;
     }
 }
 
@@ -516,7 +526,7 @@ footer {
     h3 {
         font-size: 1.5em;
         font-weight: 300;
-        color: $heading;
+        color: limegreen;
         display: inline-block;
         margin: 0;
     }
@@ -544,10 +554,10 @@ footer {
 
 .vtimeline-icon {
     position: relative;
-    color: #fff;
+    color: lime;
     width: 50px;
     height: 50px;
-    background: $base-color;
+    background:white;
     border-radius: 50%;
     float: left;
     z-index: 99;
@@ -567,7 +577,7 @@ footer {
     left: 0;
     top: 10px;
     font-weight: 300;
-    color: #374054;
+    color: limegreen;
 }
 
 /*
@@ -578,36 +588,40 @@ footer {
 
 #education {
     padding: 50px 15px 20px 15px;
-    border-bottom: 1px solid $border;
+    border-bottom: 1px solid lime;
     text-align: center;
 
     h2 {
-        color: $heading;
+        color: lime;
         margin-bottom: 50px;
+        font-size:50px;
+        font-weight: 500;
     }
 }
 
 .education-block {
+    background-color: black;
     max-width: 700px;
     margin: 0 auto 30px auto;
     padding: 15px;
-    border: 1px solid $border;
+    border: 3px solid limegreen;
     text-align: left;
+    border-radius: 10px;
 
     h3 {
         font-weight: 500;
         float: left;
         margin: 0;
-        color: $heading;
+        color: white;
     }
 
     span {
-        color: $text;
+        color: white;
         float: right;
     }
 
     h4 {
-        color: $text;
+        color: white;
         clear: both;
         font-weight: 500;
         margin: 0 0 15px 0;
@@ -615,7 +629,7 @@ footer {
 
     p, ul {
         margin: 0;
-        color: $text;
+        color: white;
         font-size: 0.9em;
     }
 
@@ -632,12 +646,13 @@ footer {
 
 #projects {
     padding: 50px 15px;
-    border-bottom: 1px solid $border;
     text-align: center;
 
     h2 {
-        color: $heading;
+        color: lime;
         margin-bottom: 50px;
+        font-size:50px;
+    font-weight: 500;
     }
 }
 
@@ -697,9 +712,12 @@ footer {
 #skills {
     padding: 50px 15px;
     text-align: center;
+    border:4px solid lime;
 
     h2 {
-        color: $heading;
+        font-size:50px;
+        font-weight: 500;
+        color:lime;
         margin-bottom: 50px;
     }
 
@@ -714,11 +732,12 @@ footer {
         display: inline-block;
         margin: 7px;
         padding: 5px 10px;
-        color: $heading;
-        background: darken($background-alt, 5%);
+        color: limegreen;
+        background: black;
         list-style: none;
         cursor: default;
         font-size: 1.2em;
+        border-radius: 5px;
     }
 }
 
@@ -730,12 +749,13 @@ footer {
 
 #contact {
     padding: 50px 15px;
-    background: $base-color;
+    background: black;
     text-align: center;
 
     h2 {
         margin: 0 0 15px 0;
-        color: #fff;
+        color:lime;
+        font-size: 50px;
         font-weight: 500;
     }
 }
@@ -751,16 +771,16 @@ footer {
         border-radius: 4px;
         border: none;
         margin-bottom: 10px;
-        background: darken($base-color, 15%);
-        color: #fff;
+        background: white;
+        color: black;
         @include transition();
         @include placeholder {
-            color: #fff;
+            color: lime;
         }
 
         &:focus {
             outline: none;
-            background: darken($base-color, 25%);
+            background: limegreen;
         }
     }
 
@@ -776,14 +796,14 @@ footer {
         border-radius: 4px;
         padding: 5px 10px;
         border: none;
-        color: $base-color;
+        color: lime;
         font-weight: 700;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         @include transition();
-
         &:hover {
-            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            color:black;
         }
+
     }
 }
 
