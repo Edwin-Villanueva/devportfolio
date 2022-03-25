@@ -337,7 +337,7 @@ footer {
         left: 0;
         right: 0;
         margin: 0 auto;
-        background: white;
+        background: limegreen;
     }
 }
 
@@ -510,6 +510,7 @@ footer {
         height: 40px;
         background: $base-color;
         background: linear-gradient(to bottom, $base-color, rgba($base-color, 0));
+        background-color: white;
         top: 100%;
         left: 303px;
     }
@@ -749,15 +750,16 @@ footer {
 
 #contact {
     padding: 50px 15px;
-    background: black;
+    background:black;
     text-align: center;
-
+    
     h2 {
         margin: 0 0 15px 0;
         color:lime;
         font-size: 50px;
         font-weight: 500;
     }
+   
 }
 
 #contact-form {
