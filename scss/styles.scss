@@ -237,6 +237,7 @@ header {
 }
 
 footer {
+    border: 4px solid #26cf12;
     padding: 50px 0;
 }
 
@@ -454,12 +455,12 @@ footer {
 
 #about {
     padding: 75px 15px;
-    border-bottom: 4px solid lime;
+    border: 4px solid #26cf12;
 
     h2 {
         font-size:50px;
         font-weight: 500;
-        color:lime;
+        color:#26cf12;
     }
 
     p {
@@ -481,7 +482,7 @@ footer {
     h2 {
         font-size:50px;
         font-weight: 500;
-        color:lime;
+        color:#26cf12;
     }
 }
 
@@ -589,11 +590,11 @@ footer {
 
 #education {
     padding: 50px 15px 20px 15px;
-    border-bottom: 1px solid lime;
+    border: 4px solid #26cf12;
     text-align: center;
 
     h2 {
-        color: lime;
+        color: #26cf12;
         margin-bottom: 50px;
         font-size:50px;
         font-weight: 500;
@@ -650,7 +651,7 @@ footer {
     text-align: center;
 
     h2 {
-        color: lime;
+        color: #26cf12;
         margin-bottom: 50px;
         font-size:50px;
     font-weight: 500;
@@ -713,12 +714,12 @@ footer {
 #skills {
     padding: 50px 15px;
     text-align: center;
-    border:4px solid lime;
+    border:4px solid #26cf12;
 
     h2 {
         font-size:50px;
         font-weight: 500;
-        color:lime;
+        color:#26cf12;
         margin-bottom: 50px;
     }
 
@@ -755,7 +756,7 @@ footer {
     
     h2 {
         margin: 0 0 15px 0;
-        color:lime;
+        color:#26cf12;
         font-size: 50px;
         font-weight: 500;
     }
@@ -777,12 +778,12 @@ footer {
         color: black;
         @include transition();
         @include placeholder {
-            color: lime;
+            color: #26cf12;
         }
 
         &:focus {
             outline: none;
-            background: limegreen;
+            background: #26cf12;
         }
     }
 
@@ -798,7 +799,7 @@ footer {
         border-radius: 4px;
         padding: 5px 10px;
         border: none;
-        color: lime;
+        color: #26cf12;
         font-weight: 700;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         @include transition();
@@ -993,6 +994,7 @@ footer {
     }
 
     footer {
+
         text-align: center;
     }
 

@@ -50,7 +50,7 @@
         <div id="lead-content">
             <h1>Edwin Villanueva</h1>
             <h2>Full Stack Developer</h2>
-            <a href="https://drive.google.com/file/d/1Sn0VF5tgssxSFNE1gQrnyGi-w3SlU5RF/view?usp=sharing" target="blank" class="btn-rounded-white">Download Resume</a>
+            <a href="./Public/Edwin Villanueva - CV.pdf" target="blank" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -200,9 +200,9 @@ grow together with the work team in a professional manner
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
+            <form action="enviar.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="text" name="mail" placeholder="Your email" required>
                 <textarea name="message" placeholder="Your message" required></textarea>
                 <button type="submit">Send</button>
             </form>
