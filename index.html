@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <script src="./js/form.js"></script>
 </head>
 
 <body>
@@ -202,10 +203,10 @@ grow together with the work team in a professional manner
         <div id="contact-form">
             <form action="https://formsubmit.co/ef3b28107e0532f0841b26ae44cb9e97" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="mail" placeholder="Your Email" required>
-                <input type="hidden" name="_subject" placeholder="Your Submission" value="PORFOLIO MENSAJE NUEVO">
+                <input type="email" name="mail" value="" placeholder="Your Email" required>
+                <input id="contacto" type="hidden" name="_subject" placeholder="Your Submission" value="">
                 <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
+                <button onclick="enviarFormulario(event)" >Send</button>
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="https://edwin-villanueva.github.io/devportfolio/">
             </form>
@@ -251,6 +252,7 @@ grow together with the work team in a professional manner
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    
 </body>
 
 </html>
