@@ -200,11 +200,14 @@ grow together with the work team in a professional manner
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
-            <form action="enviar.php" method="post">
+            <form action="https://formsubmit.co/edwinv.dev92@gmail.com" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
-                <input type="text" name="mail" placeholder="Your email" required>
+                <input type="email" name="mail" placeholder="Your Email" required>
+                <input type="hidden" name="_subject" placeholder="Your Submission" value="MENSAJE PORTFOLIO">
                 <textarea name="message" placeholder="Your message" required></textarea>
                 <button type="submit">Send</button>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://edwin-villanueva.github.io/devportfolio/">
             </form>
         </div>
         <!-- End #contact-form -->
