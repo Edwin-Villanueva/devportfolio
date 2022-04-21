@@ -704,9 +704,9 @@ footer {
 }
 
 .project {
+    width: auto;
     position: relative;
-    max-width: 1000px;
-    height: 350px;
+    height:auto;
     margin: 0 auto 30px auto;
     overflow: hidden;
     background: #fff;
@@ -1046,9 +1046,21 @@ footer {
             float: none;
         }
     }
+    .project-image{
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        padding-top: 30%;
+    
+ 
+}
 
-    .project-image {
-        display: none;
+    .project-image img{
+            width: 150px;
+            height: 150px;
+            transition:  width 1s, height 1s;
+            object-fit:cover;
+     
     }
 
     .project-info {
@@ -1058,6 +1070,12 @@ footer {
         padding: 30px 15px;
         top: auto;
         transform: none;
+    
+    }
+    .project-info div{
+        width: 30px;
+        height: 20px;
+    
     }
 
     footer {
@@ -1088,14 +1106,27 @@ footer {
             padding: 5px 10px;
         }
     }
+    #contenTab{
+        font-size: smaller;
+        width: auto;
+        height: auto;
+    }
+    .project-image {
+        width: 100%;
+    }
     
 
 }
 @media only screen and (max-width : 350px) {
     .project-info {
     
-        table{
-            display: none;
+        table div{
+            width: auto;
+            height: auto;
         }
     }
+}
+#contenTab{
+    width: auto;
+    height: auto;
 }
